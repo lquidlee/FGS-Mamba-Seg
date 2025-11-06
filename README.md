@@ -1,0 +1,22 @@
+You can complete the training on the Deepcrack dataset by following the steps below. 
+1. install torch. The version of torch is not important, what is important is to correspond to the CUDA version of the machine. Suggest visiting the PyTorch official website to select the appropriate command.
+    ```shell
+    #This is the torch installation command corresponding to CUDA version 12.1.
+    conda install pytorch==2.2.1 torchvision==0.17.1 torchaudio==2.2.1 pytorch-cuda=12.1 -c pytorch -c nvidia
+    ```
+2. install dependent libraries
+    ```shell
+    pip install -r requirements.txt
+    ```
+3. install Mamba
+    ```shell
+    cd models/encoders/selective_scan && pip install . && cd ../../..
+    ```
+4. train
+    ```shell
+    python train.py
+    ```
+5. After training, modify line 171 in the 'test. py' file. Change the value of the file path to the folder where you save the training results.
+    ```shell
+    python test.py
+    ```
