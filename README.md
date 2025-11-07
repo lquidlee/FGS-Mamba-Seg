@@ -20,3 +20,5 @@ You can complete the training on the Deepcrack dataset by following the steps be
     ```shell
     python test.py
     ```
+
+This code is directly related to the manuscript 'Frequency-Guided Spatial Mamba Segmentation: Enhancing Crack Detection through Wavelet Transform and State-Space Models' submitted to The Visual Computer. We encourage readers to cite the manuscript upon its publication.
